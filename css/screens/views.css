@@ -1,0 +1,40 @@
+.myview-screen {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+}
+
+.myview-screen__bar {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.myview-screen__orderby,
+.myview-screen__manager {
+    display: flex;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.myview-screen__manager span {
+    margin-right: 5px;
+}
+
+.myview-screen__orderby i {
+    margin: 0px 10px;
+}
+
+.myview-screen__orderby:last-child {
+    font-weight: 700;
+}
+
+.myview-screen__view {
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    margin: 5px 5px;
+    background-color: white;
+    padding: 10px 10px;
+}

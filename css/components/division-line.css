@@ -1,0 +1,6 @@
+
+.division-line {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}

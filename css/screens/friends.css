@@ -1,0 +1,86 @@
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__multi-channel-header,
+.friends-screen__birth-friend-header,
+.friends-screen__update-friend-header,
+.friends-screen__favorites-header,
+.friends-screen__suggestion-friend-header,
+.friends-screen__channel-header,
+.friends-screen__friend-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__multiuser-make,
+.friends-screen__cake-icon,
+.friends-screen__smile-icon,
+.friends-screen__channel-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    border: 1px solid rgba(100,100,100,0.2);
+    color: rgba(0,0,0,0.3);
+    background-color: rgba(119, 0, 255, 0.1);
+}
+
+.friends-screen__cake-icon {    
+    color: rgba(256, 256, 256, 0.6);
+    background-color: rgba(256, 0, 0, 0.5);
+}
+
+.friends-screen__smile-icon {
+    color: rgba(256, 256, 256, 0.8);
+    background-color: rgba(120, 0, 256, 0.5);
+}
+
+.friends-screen__channel-icon {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: var(--yellow);
+}
+
+.friends-screen__music-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 1px solid rgba(0, 255, 0, 0.5);
+}
+
+.friends-screen__music-btn i {
+    color: rgba(0, 255, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 2s;
+}
